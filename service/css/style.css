@@ -1,0 +1,54 @@
+body{
+    background-image: url(../img/unnamed.jpg);
+    background-size: cover;
+}
+header{
+    margin-top: 200px;
+    font-family: fantasy;
+}
+ /* .dws-menu это само меню */
+.dws-menu *{
+    margin: 0;
+    padding: 0;
+}
+.dws-menu ul,
+.dws-menu ol{
+    list-style: none;
+}
+.dws-menu > ul{
+    display: flex;
+    justify-content: center;
+}
+.dws-menu > ul li a{
+    display: block;
+    background: #ececed;
+    padding: 15px 30px 15px 40px;
+    font-size: 14px;
+    color: #454547;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+.dws-menu > ul li{
+    position: relative;
+    border-right: 1px solid #c7c8ca;
+}
+.dws-menu > ul li > a i.fa{
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    font-size: 18px;
+}
+.dws-menu > ul li:first-child{
+    border-left: 1px solid black;
+}
+.dws-menu > ul li:last-child{
+    border-right: 1px solid black;
+}
+ /* анимация при наведении */
+.dws-menu li a:hover{
+    background: #454547;
+    color: white;
+    box-shadow: 1px 5px 10px -5px black;
+    transition: all 0.3s ease;
+}
